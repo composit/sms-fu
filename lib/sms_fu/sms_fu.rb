@@ -100,11 +100,11 @@ module SMSFu
 
     def template_directory
       directory = defined?(Rails) ? "#{RAILS_ROOT}/config" : "#{File.dirname(__FILE__)}/../../templates"
-      if (defined?(Rails) && Rails.env == 'test') || (defined?(RAILS_ENV) && RAILS_ENV == 'test)')
-        "#{File.dirname(__FILE__)}/../../templates"
-      else
-        directory
-      end
+      #if (defined?(Rails) && Rails.env == 'test') || (defined?(RAILS_ENV) && RAILS_ENV == 'test)')
+      #  "#{File.dirname(__FILE__)}/../../templates"
+      #else
+      #  directory
+      #end
     end
   end
 end
